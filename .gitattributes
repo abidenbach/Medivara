@@ -1,3 +1,13 @@
 packages/api/composer.lock linguist-generated=true
 packages/api/resources/js/bootstrap.js linguist-generated=true
 packages/api/resources/css/app.css linguist-generated=true
+package-lock.json linguist-generated=true
+packages/api/composer.lock linguist-generated=true
+packages/api/public/index.php linguist-generated=true
+packages/api/artisan linguist-generated=true
+packages/api/config/* linguist-generated=true
+packages/api/database/migrations/* linguist-generated=true
+packages/api/bootstrap/* linguist-generated=true
+packages/api/resources/** linguist-generated=true
+packages/api/routes/* linguist-detectable=false
+packages/api/**/*.php linguist-detectable=false
