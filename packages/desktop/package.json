@@ -1,6 +1,8 @@
 {
   "name": "medivara-desktop",
   "version": "1.0.0",
+  "description": "Medivara Desktop App",
+  "author": "Antoine Bidenbach",
   "main": "dist/main.js",
   "scripts": {
     "dev": "NODE_ENV=development electron dist/main.js",
@@ -30,10 +32,10 @@
     }
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "electron": "^28.0.0",
-    "electron-builder": "^24.0.0",
-    "ts-node": "^10.0.0",
-    "typescript": "^5.0.0"
+    "@types/node": "20.0.0",
+    "electron": "28.0.0",
+    "electron-builder": "24.0.0",
+    "ts-node": "10.0.0",
+    "typescript": "5.0.0"
   }
 }
