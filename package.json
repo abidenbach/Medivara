@@ -1,0 +1,20 @@
+{
+  "name": "medivara",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/frontend",
+    "packages/desktop"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace=packages/frontend",
+    "dev:desktop": "npm run dev --workspace=packages/desktop",
+    "dev:api": "cd packages/api && php artisan serve",
+    "build:frontend": "npm run build --workspace=packages/frontend",
+    "build:desktop": "npm run build --workspace=packages/desktop",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:api\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

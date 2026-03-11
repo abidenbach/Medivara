@@ -1,0 +1,55 @@
+# ===========================
+# Dependencies
+# ===========================
+node_modules/
+**/node_modules/
+vendor/
+
+# ===========================
+# Build outputs
+# ===========================
+packages/frontend/dist/
+packages/desktop/dist/
+packages/desktop/out/
+
+# ===========================
+# Environment files
+# ===========================
+.env
+.env.local
+.env.production
+**/.env
+**/.env.local
+**/.env.production
+!**/.env.example
+
+# ===========================
+# Laravel specific
+# ===========================
+packages/api/storage/logs/
+packages/api/storage/framework/cache/
+packages/api/storage/framework/sessions/
+packages/api/storage/framework/views/
+packages/api/bootstrap/cache/
+packages/api/public/storage
+
+# ===========================
+# OS files
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
+# IDE
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===========================
+# Logs
+# ===========================
+*.log
+npm-debug.log*
+yarn-debug.log*

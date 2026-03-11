@@ -1,0 +1,39 @@
+{
+  "name": "medivara-desktop",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "NODE_ENV=development electron dist/main.js",
+    "build:ts": "tsc",
+    "build:electron": "electron-builder",
+    "build": "npm run build:ts && npm run build:electron",
+    "watch": "tsc --watch"
+  },
+  "build": {
+    "appId": "com.medivara.app",
+    "productName": "Medivara",
+    "directories": {
+      "output": "out"
+    },
+    "files": [
+      "dist/**/*",
+      "../../frontend/dist/**/*"
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}
